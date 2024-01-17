@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mang = [1, 2, 4, 5];
+
+        // Kiểm tra xem mảng có số nguyên nào không
+        var tonTaiSoNguyen = false;
+
+        // Duyệt qua mảng và in ra các số nguyên
+        for (var i = 0; i < mang.length; i++) {
+            if (Number.isInteger(mang[i])) {
+                console.log(mang[i]);
+                tonTaiSoNguyen = true;
+            }
+        }
+
+        // Hiển thị thông báo nếu không có số nguyên nào trong mảng
+        if (!tonTaiSoNguyen) {
+            console.log("Trong mảng không tồn tại số nguyên.");
+        }
+    </script>
+</body>
+
+</html>
